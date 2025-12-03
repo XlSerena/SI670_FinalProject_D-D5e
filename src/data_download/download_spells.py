@@ -26,6 +26,9 @@ for i, s in enumerate(spells_list):
     if i % 30 == 29:
         time.sleep(1)
 
+
+print(f"\nTotal amount：{len(all_spells_full)} ")
+
 save_path = SAVE_DIR / "spells.json"
 with open(save_path, "w", encoding="utf-8") as f:
     json.dump(all_spells_full, f, ensure_ascii=False, indent=2)

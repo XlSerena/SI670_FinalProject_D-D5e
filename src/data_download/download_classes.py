@@ -10,7 +10,7 @@ PROJECT_ROOT = CURRENT_DIR.parent.parent
 SAVE_DIR = PROJECT_ROOT / "data" / "raw"
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
-print("Begin downloading all profession data (12 in total)...")
+print("Begin downloading all profession data...")
 
 classes_list = requests.get("https://www.dnd5eapi.co/api/classes").json()["results"]
 

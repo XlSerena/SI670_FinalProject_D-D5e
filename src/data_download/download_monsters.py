@@ -29,6 +29,7 @@ for i, m in enumerate(monsters_list):
     if i % 30 == 29:
         time.sleep(1)
 
+print(f"\nTotal amount：{len(all_monsters_full)} ")
 # 3. 保存到本地
 save_path = SAVE_DIR / "monsters.json"
 with open(save_path, "w", encoding="utf-8") as f:
